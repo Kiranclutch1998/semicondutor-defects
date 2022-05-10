@@ -1,0 +1,27 @@
+schema: '2.0'
+stages:
+  data_validation:
+    cmd: python validation.py
+    deps:
+    - path: Training_Batch_Files
+      md5: 9080e0b87a3fd538649030c0d625e114.dir
+      size: 13630305
+      nfiles: 83
+    - path: validation.py
+      md5: 2ef466775af05fa4b03cf6d2f4b64bf1
+      size: 972
+    outs:
+    - path: data/Training_FileFromDB/InputFile.csv
+      md5: 2cba418459555e7233ca2dcf13a7e624
+      size: 4070635
+  training_stage:
+    cmd: python training.py
+    deps:
+    - path: data/Training_FileFromDB/InputFile.csv
+      md5: 2cba418459555e7233ca2dcf13a7e624
+      size: 4070635
+    outs:
+    - path: models/
+      md5: f91a66342d0b0c060a7704c694c9b4d1.dir
+      size: 122758
+      nfiles: 4

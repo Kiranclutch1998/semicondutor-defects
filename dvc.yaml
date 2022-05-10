@@ -1,14 +1,14 @@
 stages:
   data_validation:
-    cmd: python src/validation.py
+    cmd: python validation.py
     deps:
-      - src/validation.py
+      - validation.py
       - Training_Batch_Files
     outs:
       - data/Training_FileFromDB/InputFile.csv
 
   training_stage:
-    cmd: python src/training.py
+    cmd: python training.py
     deps:
       - data/Training_FileFromDB/InputFile.csv
     outs:
