@@ -1,18 +1,18 @@
 # external requirements
 numpy
-pandas==1.2.4
-flask==2.0.3
+pandas
+flask
 flask-cors
 Flask-MonitoringDashboard
 dvc[gdrive]
-Sphinx==4.4.0
+Sphinx
 coverage
-pyyaml==6.0
-setuptools==61.2.0
-scikit-learn==1.0.2
-xgboost==1.5.0
-matplotlib==3.0.3
-kneed==0.7.0
+pyyaml
+setuptools
+scikit-learn
+xgboost
+matplotlib
+kneed
 pytest
 tox
 flake8
