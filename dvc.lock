@@ -20,8 +20,11 @@ stages:
     - path: data/Training_FileFromDB/InputFile.csv
       md5: 2cba418459555e7233ca2dcf13a7e624
       size: 4070635
+    - path: training.py
+      md5: 103a0202ab4209c81f542cddaaf71658
+      size: 577
     outs:
     - path: models/
-      md5: f91a66342d0b0c060a7704c694c9b4d1.dir
-      size: 122758
+      md5: 86a47ba041218a1222c3a6939f5fdc89.dir
+      size: 86545
       nfiles: 4

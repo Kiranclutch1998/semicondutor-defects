@@ -10,6 +10,7 @@ stages:
   training_stage:
     cmd: python training.py
     deps:
+      - training.py
       - data/Training_FileFromDB/InputFile.csv
     outs:
       - models/
