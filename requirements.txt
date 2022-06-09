@@ -1,5 +1,5 @@
 # external requirements
-numpy==1.3.0
+numpy
 pandas==1.2.4
 flask==2.0.3
 flask-cors
